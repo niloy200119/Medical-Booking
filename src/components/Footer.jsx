@@ -1,31 +1,30 @@
 import React from "react";
 import icon from "../assets/logo.png";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
     <footer className="footer footer-center bg-base-200 text-base-content rounded p-10 flex flex-col items-center">
       <div className="flex items-center gap-2">
-                <img src={icon} alt="logo" className="w-10 h-10" />
-                <span className="text-2xl font-semibold">Phudu</span>
-              </div>
-
-      <nav className="grid grid-flow-col gap-4">
-        <a className="link link-hover" href="#">
-          Home
-        </a>
-        <a className="link link-hover" href="#">
-          My-Bookings
-        </a>
-        <a className="link link-hover" href="#">
-          Blogs
-        </a>
-        <a className="link link-hover" href="#">
-          Contact Us
-        </a>
-      </nav>
-
+        <img src={icon} alt="logo" className="w-10 h-10" />
+        <span className="text-2xl font-semibold">Phudu</span>
+      </div>
+      {/* ✅ Navigation Links */}
+      <ul className="flex flex-wrap justify-center mt-4">
+        <li className="mx-3 text-lg hover:underline hover:text-blue-600 transition-all">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="mx-3 text-lg hover:underline hover:text-blue-600 transition-all">
+          <Link to="/MyBookings">My-Bookings</Link>
+        </li>
+        <li className="mx-3 text-lg hover:underline hover:text-blue-600 transition-all">
+          <Link to="/Blogs">Blogs</Link>
+        </li>
+        <li className="mx-3 text-lg hover:underline hover:text-blue-600 transition-all">
+          <Link to="/Contact">Contact Us</Link>
+        </li>
+      </ul>
       <hr className="border-t border-gray-400 w-1/2 my-2" />
-
       <nav className="mb-4">
         <div className="grid grid-flow-col gap-4">
           {/* Twitter */}

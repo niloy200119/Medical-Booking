@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router";
 
 const SingleDoc = ({ singleDoctor }) => {
-  const { name, image, registration_number, experience, education, available } =
+  const { id,name, image, registration_number, experience, education, available } =
     singleDoctor;
 
   return (
@@ -37,9 +38,10 @@ const SingleDoc = ({ singleDoctor }) => {
           Reg. No: {registration_number}
         </p>
 
+        <Link to={`/DocDetails/${id}`}>
         <button className="btn btn-outline w-full text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300">
           View Details
-        </button>
+        </button></Link>
       </div>
     </div>
   );

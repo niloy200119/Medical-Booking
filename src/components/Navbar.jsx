@@ -1,21 +1,30 @@
 import React from "react";
 import icon from "../assets/logo.png";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const links = (
     <>
-      <li className="mx-3 text-lg hover:underline hover:text-blue-600 transition-all">
-        Home
-      </li>
-      <li className="mx-3 text-lg hover:underline hover:text-blue-600 transition-all">
-        My-Bookings
-      </li>
-      <li className="mx-3 text-lg hover:underline hover:text-blue-600 transition-all">
-        Blogs
-      </li>
-      <li className="mx-3 text-lg hover:underline hover:text-blue-600 transition-all">
-        Contact Us
-      </li>
+      <Link to="/">
+        <li className="mx-3 text-lg hover:underline hover:text-blue-600 transition-all">
+          Home
+        </li>
+      </Link>
+      <Link to="/MyBookings">
+        <li className="mx-3 text-lg hover:underline hover:text-blue-600 transition-all">
+          My-Bookings
+        </li>
+      </Link>
+      <Link to="/Blogs">
+        <li className="mx-3 text-lg hover:underline hover:text-blue-600 transition-all">
+          Blogs
+        </li>
+      </Link>
+      <Link to="/Contact">
+        <li className="mx-3 text-lg hover:underline hover:text-blue-600 transition-all">
+          Contact Us
+        </li>
+      </Link>
     </>
   );
 
