@@ -52,7 +52,6 @@ function MyBookings() {
                             <Tooltip />
                             <Legend />
                             <Bar dataKey="charge" fill="#8884d8" name="Charge (৳)" />
-                            <Bar dataKey="experience" fill="#82ca9d" name="Experience (years)" />
                         </BarChart>
                     </ResponsiveContainer>
                 </div>

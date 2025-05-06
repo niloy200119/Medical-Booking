@@ -17,14 +17,14 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: ()=>fetch('docData.json'),
+        loader: ()=>fetch('/docData.json'),
         path: "/",
         Component: Home,
       },
       {
 
         path: "/MyBookings",
-        loader: () => fetch("docData.json").then(res => res.json()),
+        loader: () => fetch("/docData.json"),
         Component: MyBookings,
 
       },
@@ -43,7 +43,7 @@ export const router = createBrowserRouter([
       {
         path: "/DocDetails/:id",
         id: "doc-details", 
-        loader: () => fetch("docData.json").then(res => res.json()),
+        loader: () => fetch("/docData.json"),
         Component: DocDetails,
       }
       
