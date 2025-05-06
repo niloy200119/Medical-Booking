@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. Ayesha Rahman",
+      "image": "https://i.ibb.co.com/s9Cn9VMT/doctor-sample.png",
+      "education": "MBBS, FCPS (Medicine)",
+      "speciality": "Internal Medicine",
+      "experience": "10 years",
+      "registration_number": "BMC-20111234",
+      "available": "Available"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Tanvir Ahmed",
+      "image": "https://i.ibb.co.com/N6GnFwps/portrait-doc.webp",
+      "education": "MBBS, MS (Orthopedics)",
+      "speciality": "Orthopedic Surgeon",
+      "experience": "12 years",
+      "registration_number": "DMC-20091001",
+      "available": "Available"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Nusrat Jahan",
+      "image": "https://i.ibb.co.com/RwvhZ53/istockphoto-1189304032-612x612.jpg",
+      "education": "MBBS, MD (Cardiology)",
+      "speciality": "Cardiologist",
+      "experience": "9 years",
+      "registration_number": "BMC-20120456",
+      "available": "Available"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Mahmudul Hasan",
+      "image": "https://i.ibb.co.com/b5fsJ87w/istockphoto-1340883379-612x612.jpg",
+      "education": "MBBS, FCPS (Surgery)",
+      "speciality": "General Surgeon",
+      "experience": "15 years",
+      "registration_number": "DMC-20070321",
+      "available": "Available"
+    },
+    {
+      "id": 5,
+      "name": "Dr. Farhana Sultana",
+      "image": "https://i.ibb.co.com/1Gv2fhk4/istockphoto-1354172647-612x612.jpg",
+      "education": "MBBS, DGO, FCPS (Gynae & Obs)",
+      "speciality": "Gynecologist",
+      "experience": "11 years",
+      "registration_number": "BMC-20101357",
+      "available": "Available"
+    },
+    {
+      "id": 6,
+      "name": "Dr. Rezaul Karim",
+      "image": "https://i.ibb.co.com/1fYhCQtx/istockphoto-1346124900-612x612.jpg",
+      "education": "MBBS, MD (Neurology)",
+      "speciality": "Neurologist",
+      "experience": "13 years",
+      "registration_number": "DMC-20081222",
+      "available": "Available"
+    },
+    {
+      "id": 7,
+      "name": "Dr. Lubna Hasan",
+      "image": "https://i.ibb.co.com/dsKq2778/istockphoto-1372002650-612x612.jpg",
+      "education": "MBBS, FCPS (Pediatrics)",
+      "speciality": "Pediatrician",
+      "experience": "8 years",
+      "registration_number": "BMC-20130998",
+      "available": "Available"
+    },
+    {
+      "id": 8,
+      "name": "Dr. Imran Hossain",
+      "image": "https://i.ibb.co.com/BVZB708M/istockphoto-1434687410-612x612.jpg",
+      "education": "MBBS, MD (Psychiatry)",
+      "speciality": "Psychiatrist",
+      "experience": "10 years",
+      "registration_number": "DMC-20100876",
+      "available": "Available"
+    },
+    {
+      "id": 9,
+      "name": "Dr. Samira Khan",
+      "image": "https://i.ibb.co.com/4RGvQrsj/istockphoto-1425798958-612x612.jpg",
+      "education": "MBBS, MS (ENT)",
+      "speciality": "ENT Specialist",
+      "experience": "7 years",
+      "registration_number": "BMC-20140892",
+      "available": "Available"
+    },
+    {
+      "id": 10,
+      "name": "Dr. Arif Mahmud",
+      "image": "https://i.ibb.co.com/BV3N58YT/istockphoto-1470505351-612x612.jpg",
+      "education": "MBBS, MD (Dermatology)",
+      "speciality": "Dermatologist",
+      "experience": "9 years",
+      "registration_number": "DMC-20110576",
+      "available": "Available"
+    },
+    {
+      "id": 11,
+      "name": "Dr. Nilufa Yasmin",
+      "image": "https://i.ibb.co.com/pj4VFVdm/istockphoto-2187596982-612x612.jpg",
+      "education": "MBBS, MD (Nephrology)",
+      "speciality": "Nephrologist",
+      "experience": "14 years",
+      "registration_number": "BMC-20090944",
+      "available": "Available"
+    },
+    {
+      "id": 12,
+      "name": "Dr. Tareq Zaman",
+      "image": "https://i.ibb.co.com/HfGTwfNg/istockphoto-1785918657-612x612.jpg",
+      "education": "MBBS, FCPS (Anesthesiology)",
+      "speciality": "Anesthesiologist",
+      "experience": "11 years",
+      "registration_number": "DMC-20111100",
+      "available": "Available"
+    }
+  ]
+  
