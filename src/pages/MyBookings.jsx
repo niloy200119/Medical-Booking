@@ -3,10 +3,30 @@ import { useLoaderData } from 'react-router';
 import { getStoredDoc } from '../Utility/addToDB';
 import SingleDoc from './SingleDoc';
 import {
-    BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
+    BarChart,
+    Bar,
+    Cell,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    ResponsiveContainer,
 } from 'recharts';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+// Triangle shape generator
+const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
+const getPath = (x, y, width, height) => {
+    return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
+    ${x + width / 2}, ${y}
+    C${x + width / 2},${y + height / 3} ${x + (2 * width) / 3},${y + height} ${x + width}, ${y + height}
+    Z`;
+};
+
+const TriangleBar = (props) => {
+    const { fill, x, y, width, height } = props;
+    return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
+};
 
 function MyBookings() {
     const [serialList, setSerialList] = useState([]);
@@ -19,7 +39,7 @@ function MyBookings() {
         setSerialList(mySerialList);
     }, []);
 
-    // Function to cancel an appointment
+    // Cancel appointment handler
     const cancelAppointment = (id) => {
         const updatedList = serialList.filter(doctor => doctor.id !== id);
         setSerialList(updatedList);
@@ -42,11 +62,10 @@ function MyBookings() {
         });
     };
 
-    // Prepare data for the chart
+    // Prepare data for chart
     const chartData = serialList.map(doctor => ({
         name: doctor.name,
         charge: doctor.charge,
-        experience: doctor.experience
     }));
 
     return (
@@ -68,9 +87,15 @@ function MyBookings() {
                             <CartesianGrid strokeDasharray="3 3" />
                             <XAxis dataKey="name" />
                             <YAxis />
-                            <Tooltip />
-                            <Legend />
-                            <Bar dataKey="charge" fill="#8884d8" name="Charge (৳)" />
+                            <Bar
+                                dataKey="charge"
+                                shape={<TriangleBar />}
+                                label={{ position: 'top' }}
+                            >
+                                {chartData.map((entry, index) => (
+                                    <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
+                                ))}
+                            </Bar>
                         </BarChart>
                     </ResponsiveContainer>
                 </div>
