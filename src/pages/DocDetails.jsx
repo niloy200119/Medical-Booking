@@ -2,6 +2,8 @@ import React from "react";
 import { useParams, useRouteLoaderData } from "react-router";
 import { Link } from "react-router";
 import { addToSerialDB } from "../Utility/addToDB";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const DocDetails = () => {
   const { id } = useParams();
@@ -36,16 +38,25 @@ const DocDetails = () => {
     available_week_days,
   } = SingleDoctor;
 
-const handleAppointed=id=>{
-
+  const handleAppointed = (id) => {
     addToSerialDB(id);
-
-}
-
-
+    toast.success("Appointment successfully booked!", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  };
 
   return (
     <div className="min-h-screen p-6 bg-base-100 text-base-content">
+      {/* Toast container */}
+      <ToastContainer />
+
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold mb-2">Doctor Profile Details</h1>
@@ -71,26 +82,23 @@ const handleAppointed=id=>{
               <span className="font-semibold">Speciality:</span> {speciality}
             </p>
             <p>
-              <span className="font-semibold">Experience:</span> {experience}{" "}
-              years{" "}
+              <span className="font-semibold">Experience:</span> {experience} years
             </p>
             <p>
               <span className="font-semibold">Affiliation:</span> {college_name}
             </p>
             <p>
-              <span className="font-semibold">Reg No:</span>{" "}
-              {registration_number}
+              <span className="font-semibold">Reg No:</span> {registration_number}
             </p>
             <p>
-              <span className="font-semibold">Available Days:</span>{" "}
-              {available_week_days}
+              <span className="font-semibold">Available Days:</span> {available_week_days}
             </p>
             <p>
-              <span className="font-semibold ">Consultation Fee:</span> ৳
-              {charge} + VAT
+              <span className="font-semibold">Consultation Fee:</span> ৳{charge} + VAT
             </p>
           </div>
         </div>
+
         <div className="card bg-base-200 shadow-lg p-6 mt-8 max-w-4xl mx-auto">
           <div className="card-body space-y-4 text-center">
             <h2 className="card-title text-2xl justify-center">
@@ -99,7 +107,10 @@ const handleAppointed=id=>{
             <p className="text-gray-600">
               Check the doctor's availability and confirm your slot.
             </p>
-            <button onClick={()=>handleAppointed(id)} className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-6 rounded-full transition-all duration-300">
+            <button
+              onClick={() => handleAppointed(id)}
+              className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-6 rounded-full transition-all duration-300"
+            >
               Book Appointment Now
             </button>
           </div>
