@@ -1,13 +1,68 @@
-# React + Vite
+# 🏥 MediBook - Medical Appointment Booking System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![MediBook Banner](https://via.placeholder.com/1200x400/4F46E5/FFFFFF?text=MediBook+-+Professional+Healthcare+Booking)
 
-Currently, two official plugins are available:
+## 📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+MediBook is a comprehensive medical appointment booking platform designed to connect patients with trusted healthcare professionals. Built with React.js, this application features doctor discovery, appointment scheduling, and data visualization capabilities.
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# b11a8-router-booking-niloy200119
+### 🎯 Core Functionality
+- **Doctor Discovery**: Browse through qualified medical professionals
+- **Appointment Management**: Book, view, and cancel appointments
+- **Real-time Availability**: Check doctor schedules instantly
+- **Persistent Data**: LocalStorage integration for appointment continuity
+
+### 📊 Data Visualization
+- Interactive fee comparison charts using Recharts
+- Dynamic updates when appointments change
+- Responsive design for all device types
+
+### 🖥 UI/UX Highlights
+- Clean, professional interface matching healthcare standards
+- Animated counters for statistics display
+- Responsive layout for desktop and mobile
+- Intuitive navigation with persistent header/footer
+
+## 🛠 Technology Stack
+
+| Category        | Technologies Used               |
+|-----------------|---------------------------------|
+| Frontend        | React.js, React Router          |
+| State Management| React Hooks (useState, useEffect)|
+| Data Storage    | Browser LocalStorage            |
+| Data Viz        | Recharts                       |
+| UI Enhancements | React CountUp, CSS Animations   |
+| Form Handling   | Controlled Components           |
+
+## 📸 Application Screenshots
+
+### Homepage
+![Homepage](https://via.placeholder.com/600x400/4F46E5/FFFFFF?text=MediBook+Homepage)
+- Featured doctors section
+- Service statistics with animations
+- Quick search functionality
+
+### Doctor Profile
+![Doctor Profile](https://via.placeholder.com/600x400/4F46E5/FFFFFF?text=Doctor+Details)
+- Complete professional profile
+- Availability calendar
+- Fee structure breakdown
+
+### Appointments Dashboard
+![Appointments](https://via.placeholder.com/600x400/4F46E5/FFFFFF?text=My+Appointments)
+- Current bookings overview
+- Cancelation functionality
+- Fee visualization chart
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/medibook.git
