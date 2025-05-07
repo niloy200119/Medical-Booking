@@ -73,8 +73,8 @@ npm run dev
 
 ## 🔗 Live Demo
 
-> _(Include this if deployed)_  
-**🔗 [Live Site Coming Soon / Add URL Here]**
+
+**🔗 [resplendent-chebakia-8a937e.netlify.app](https://resplendent-chebakia-8a937e.netlify.app/)**
 
 ---
 
